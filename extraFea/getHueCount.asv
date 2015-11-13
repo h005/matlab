@@ -1,0 +1,16 @@
+function val = getHueCount(img)
+img = im2uint8(img);
+img = rgb2hsv(img);
+val = 0;
+range = [0.15 0.95];
+sMin = 0.2;
+bins = zeros(20,1);
+alpha = 0.05;
+step = (range(2) - range(1))/length(bins);
+for i = 0:size(img,1)
+    for j = 0:size(img,2)
+        if img(i,j,1) > range(1) && img(i,j,1) < range(2) && img(i,j,2) > sMin
+            index = img(
+        end
+    end
+end

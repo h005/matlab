@@ -1,0 +1,9 @@
+%% read in file list
+imgFileList = 'fileName.txt';
+fileName = importdata(imgFileList);
+
+% read in image
+img = imread(fileName{i});
+
+%% color distribution
+colorBin = colorDistribution(img);

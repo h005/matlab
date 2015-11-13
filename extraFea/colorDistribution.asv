@@ -1,0 +1,5 @@
+function colorBin = colorDistribution(img)
+colorBin = zeros(4096,1);
+img = im2uint8(img);
+img = bitshift(img,-4);
+colorBin
